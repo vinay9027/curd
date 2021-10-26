@@ -1,0 +1,67 @@
+﻿@model First_MVC.Models.Employee
+
+
+<div class="container">
+    <div claas="row">
+        
+        <div class="col-6 offset-3">
+
+            <form asp-action="Create" method="post">
+                <div class="form-group">
+
+                    <lable asp-for="ID"></lable>
+                    <input type="hidden" asp-for="Id" class="form-control" />
+
+                </div>
+
+                <div class="form-group">
+
+                    <lable asp-for="Name">Your Name</lable>
+                    <input asp-for="Name" class="form-control" />
+
+                </div>
+
+                <div class="form-group">
+
+                    <lable asp-for="Email">Your Email</lable>
+                    <input asp-for="Email" class="form-control" />
+
+                </div>
+
+                <div class="form-group">
+
+                    <lable asp-for="Mobile">Your Mobile</lable>
+                    <input asp-for="Mobile" class="form-control" />
+
+                </div>
+                
+                <div class="form-group">
+
+                    <lable asp-for="Department">Your Department</lable>
+                    <input asp-for="Department" class="form-control" />
+
+                </div>
+                <div class="form-group">
+
+                    <lable asp-for="Gender"></lable>
+                    <input type="radio" value="Male" id="Gender" name="Gender" />Male<br />
+<input type="radio" value="Female" id="Gender" name="Gender" />Female<br />
+
+                </div>
+
+                <div class="form-group">
+
+                    
+                    <button type="submit" class="btn btn-success btn-block">Submit</button> 
+                        <button type="reset" class="btn btn-success btn-block">Clear</button>
+                </div>
+
+
+
+            </form>
+        </div>
+
+
+        </div>
+
+</div>
